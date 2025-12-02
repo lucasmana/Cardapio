@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="cardapio.css">
+<body>
+    
+    <section class="cardapio-container">
+    <div class="cardapio-header">
+      <h1>Nosso Cardápio</h1>
+      <p>Descubra nossos pratos especiais preparados com ingredientes frescos e muito amor</p>
+    </div>
+
+    <div class="categorias">
+      <button class="categoria-btn ativo" data-categoria="todos">Todos</button>
+      <button class="categoria-btn" data-categoria="entradas">Entradas</button>
+      <button class="categoria-btn" data-categoria="pratos-principais">Pratos Principais</button>
+      <button class="categoria-btn" data-categoria="sobremesas">Sobremesas</button>
+      <button class="categoria-btn" data-categoria="bebidas">Bebidas</button>
+    </div>
+
+    <div class="cardapio-grid">
+      <!-- Os itens do cardápio serão carregados dinamicamente via JavaScript -->
+    </div>
+  </section>
+  <script src="cardapio.js" defer></script>
+
+</body>
+</html>

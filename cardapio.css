@@ -1,0 +1,200 @@
+/* Estilos para o Cardápio */body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f2ff;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.cardapio-container {
+    max-width: 1250px;
+    margin: 10px auto;
+    padding: 4px;
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9ff 100%);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(59, 94, 255, 0.2);
+}
+
+.cardapio-header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 40px;
+    background: linear-gradient(90deg, #6f3bff, #8f31ff);
+    border-radius: 15px;
+    color: white;
+}
+
+.cardapio-header h1 {
+    font-family: "Julius Sans One", sans-serif;
+    font-size: 3rem;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.cardapio-header p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+.categorias {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.categoria-btn {
+    padding: 12px 25px;
+    background: linear-gradient(45deg, #3b5eff, #8f31ff);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-family: "Julius Sans One", sans-serif;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(59, 94, 255, 0.3);
+}
+
+.categoria-btn:hover,
+.categoria-btn.ativo {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(34, 45, 99, 0.4);
+    background: linear-gradient(45deg, #5d289c,  #5d289c);
+}
+
+.cardapio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.item-cardapio {
+    background: rgb(255, 255, 255);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.item-cardapio:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(59, 94, 255, 0.2);
+    border-color: #3b5eff;
+}
+
+.item-imagem {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.item-cardapio:hover .item-imagem {
+    transform: scale(1.05);
+}
+
+.item-info {
+    padding: 20px;
+}
+
+.item-titulo {
+    font-family: "Julius Sans One", sans-serif;
+    font-size: 1.4rem;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.item-descricao {
+    color: #666;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.item-preco {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #3b5eff;
+    margin-bottom: 15px;
+}
+
+.item-tags {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.tag {
+    background: linear-gradient(45deg, #3b5eff, #8f31ff);
+    color: white;
+    padding: 4px 12px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.tag.vegetariano {
+    background: linear-gradient(45deg, #4CAF50, #45a049);
+}
+
+.tag.picante {
+    background: linear-gradient(45deg, #ff5722, #f44336);
+}
+
+.tag.recomendado {
+    background: linear-gradient(45deg, #ff9800, #ff5722);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .cardapio-container {
+        margin: 20px;
+        padding: 15px;
+    }
+    
+    .cardapio-header h1 {
+        font-size: 2rem;
+    }
+    
+    .categorias {
+        gap: 10px;
+    }
+    
+    .categoria-btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+    
+    .cardapio-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
+
+/* Animação de entrada */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.item-cardapio {
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+.item-cardapio:nth-child(1) { animation-delay: 0.1s; }
+.item-cardapio:nth-child(2) { animation-delay: 0.2s; }
+.item-cardapio:nth-child(3) { animation-delay: 0.3s; }
+.item-cardapio:nth-child(4) { animation-delay: 0.4s; }
+.item-cardapio:nth-child(5) { animation-delay: 0.5s; }
+.item-cardapio:nth-child(6) { animation-delay: 0.6s; } 
