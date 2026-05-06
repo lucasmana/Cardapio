@@ -1,0 +1,60 @@
+{
+  "name": "verde-sabor-frontend",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Frontend do e-commerce de cardápio Verde & Sabor",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview",
+    "format": "prettier --write \"src/**/*.{js,jsx,css,md}\"",
+    "type-check": "echo 'TypeScript not configured - skipping type check'"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.20.1",
+    "styled-components": "^6.1.6",
+    "framer-motion": "^10.16.16",
+    "react-icons": "^4.12.0",
+    "react-hot-toast": "^2.4.1",
+    "zustand": "^4.4.7",
+    "axios": "^1.6.2",
+    "date-fns": "^2.30.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.2.1",
+    "vite": "^5.0.8",
+    "eslint": "^8.55.0",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.5",
+    "prettier": "^3.1.1"
+  },
+  "keywords": [
+    "react",
+    "vite",
+    "cardapio",
+    "e-commerce",
+    "restaurant",
+    "food-delivery",
+    "frontend"
+  ],
+  "author": "Verde & Sabor Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/verde-sabor/cardapio.git"
+  },
+  "bugs": {
+    "url": "https://github.com/verde-sabor/cardapio/issues"
+  },
+  "homepage": "https://verde-sabor.com.br",
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  }
+}
